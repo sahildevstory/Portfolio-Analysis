@@ -1,52 +1,44 @@
-Portfolio Analytics Dashboard
+📊 Portfolio Analytics Dashboard
 Full-Stack Internship Assignment – WealthManager.online
 
-This project is a complete portfolio analytics dashboard built for the WealthManager.online internship assignment. It includes both a fully functional backend API and an interactive, responsive frontend interface. The goal was to provide a comprehensive, real-time view of an investor’s stock portfolio through visualizations, metrics, and performance analytics.
+This is a complete portfolio analytics dashboard developed as part of the internship assignment for WealthManager.online. It consists of a fully functional backend API and an interactive, responsive frontend interface.
 
-Project Overview
-This application gives investors meaningful insights into their investment portfolio via a clean UI and well-structured API. It includes:
+The goal is to provide investors with a real-time, insightful view of their stock portfolio through visual analytics, key metrics, and performance tracking.
 
-RESTful backend with calculated portfolio metrics
+🧩 Project Overview
+This application provides meaningful insights into an investor's portfolio using a clean UI and a structured backend. It includes:
 
-Interactive frontend built with modern UI libraries
+RESTful backend with portfolio metrics and calculations
 
-Real-time visualizations for holdings, performance, and allocation
+Interactive React frontend with modern UI libraries
 
-Fully responsive, production-ready design
+Real-time visualizations: holdings, allocation, performance
 
-Features
-Backend API
-Implemented with Node.js + Express, the API exposes four core endpoints:
+Fully responsive, production-ready layout
 
-GET /api/portfolio/holdings
-Returns a complete list of stock holdings with gain/loss metrics
+✅ Features
+Backend API (Node.js + Express)
+Endpoint	Description
+GET /api/portfolio/holdings	Returns list of stock holdings with gain/loss metrics
+GET /api/portfolio/allocation	Returns portfolio breakdown by sector and market cap
+GET /api/portfolio/performance	Historical performance vs benchmarks (Nifty 50, Gold)
+GET /api/portfolio/summary	Returns total value, gain/loss, top/worst performers, diversification score, and risk level
 
-GET /api/portfolio/allocation
-Returns portfolio distribution by sector and market cap
+Frontend Dashboard (React + Vite)
+Overview Cards: Total Value, Gain/Loss, % Return, Total Holdings
 
-GET /api/portfolio/performance
-Provides historical performance of portfolio vs benchmarks (Nifty 50, Gold)
+Allocation Charts: Sector-wise and market cap distribution
 
-GET /api/portfolio/summary
-Returns total value, gain/loss, top/worst performer, diversification score, and risk level
+Holdings Table: Sortable, searchable, and color-coded by performance
 
-Frontend Dashboard
-Developed using React, the frontend is designed for clarity, responsiveness, and interactivity. Major sections include:
+Performance Chart: Line chart comparison with Nifty 50 and Gold
 
-Overview Cards – Total Value, Gain/Loss, % Performance, Number of Holdings
+Top Performers: Highlights best and worst performing stocks with insights
 
-Allocation Charts – Sector-wise and market cap-based asset distribution
-
-Holdings Table – Sortable and searchable with color-coded performance
-
-Performance Chart – Timeline comparison against Nifty 50 and Gold
-
-Top Performers – Best/worst stock analysis with risk and diversification scores
-
-Design System
+🎨 Design System
 Clean, modern financial dashboard layout
 
-Card-based grid system with professional typography
+Card-based grid system with responsive design
 
 Color-coded indicators:
 
@@ -54,15 +46,13 @@ Green for gains (#10B981)
 
 Red for losses (#EF4444)
 
-Warning/Neutral colors: #F59E0B, #3B82F6
+Other accents: #F59E0B (warning), #3B82F6 (primary)
 
-Responsive design supporting mobile and desktop
+Smooth transitions, hover effects, and loading states
 
-Loading states, error boundaries, and transitions for smooth UX
+Chart visualizations powered by Chart.js via react-chartjs-2
 
-Charts implemented using Chart.js via react-chartjs-2
-
-Tech Stack
+🧰 Tech Stack
 Backend
 Node.js
 
@@ -79,7 +69,7 @@ TailwindCSS
 
 ShadCN/UI
 
-Chart.js (via react-chartjs-2)
+Chart.js (react-chartjs-2)
 
 Lucide React Icons
 
@@ -87,7 +77,7 @@ Axios for API calls
 
 Deployed on Vercel
 
-Folder Structure
+📁 Folder Structure
 bash
 Copy
 Edit
@@ -106,41 +96,40 @@ project-root/
 │       ├── HoldingsTable.tsx
 │       ├── PerformanceChart.tsx
 │       └── TopPerformers.tsx
-Installation & Running Locally
+🧪 Installation & Running Locally
 bash
 Copy
 Edit
 # Install dependencies
 npm install
 
-# Start backend
+# Start backend (from root)
 cd server && node index.js
 
-# Start frontend (in a separate terminal)
+# Start frontend (from root in separate terminal)
 npm run dev
-AI Tools Used
+🤖 AI Tools Used
 Tool	Purpose
-ChatGPT-4	Clarifying requirements, optimizing logic
-GitHub Copilot	Auto-suggestions for Tailwind and React JSX
+ChatGPT-4	Clarified requirements, optimized logic
+GitHub Copilot	Tailwind suggestions, JSX generation assistance
 
-All business logic, performance calculations, and integration were hand-written. AI tools were used only to improve development speed and provide suggestions, not replace core implementation.
+All critical logic and business calculations were manually written.
+AI tools were used to accelerate development and assist with syntax—not replace implementation.
 
-Deployment
-Backend hosted on Render
+🚀 Deployment
+Backend + Frontend hosted on: Render
 
-Frontend deployed via Vercel
+Environment-safe, modular, and production-ready configuration
 
-Fully optimized for production with environment-safe configurations and modular codebase
+📌 Deliverables Summary
+ Functional REST API with 4 endpoints
 
-Deliverables Summary
- Functional REST API with four endpoints
+ Fully interactive React frontend with analytics
 
- Fully interactive React frontend with visual analytics
+ Responsive, clean UI with proper design system
 
- Clean, responsive design with professional UI
+ Error handling and loading states in place
 
- Error handling and loading states implemented
+ Organized, production-grade GitHub repository
 
- Complete GitHub repository with organized codebase
-
- Hosted live demo for both backend and frontend
+ Hosted and working demo (backend + frontend)
