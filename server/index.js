@@ -8,11 +8,22 @@ const app = express();
 const PORT = 3001;
 
 // Middleware
-app.use(cors({
-  origin: 'http://localhost:5173',
+const allowedOrigins = [
+  'http://localhost:5173', // local dev
   'https://portfolio-analysis-dashboard.netlify.app' // deployed frontend
-  credentials: true
-}));app.use(express.json());
+];
+
+app.use(cors({
+  origin: function (origin, callback) {
+    if (!origin || allowedOrigins.includes(origin)) {
+      callback(null, true);
+    } else {
+      callback(new Error('Not allowed by CORS'));
+    }
+  }
+}));
+
+app.use(express.json());
 
 // Portfolio Holdings Endpoint
 app.get('/api/portfolio/holdings', (req, res) => {
