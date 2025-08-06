@@ -104,8 +104,8 @@ app.get('/health', (req, res) => {
   res.json({ status: 'OK', timestamp: new Date().toISOString() });
 });
 
-// Fallback: for React Router
-app.get('*', (_, res) => {
+
+app.get('/*', (_, res) => {
   res.sendFile(path.join(__dirname, '..', 'dist', 'index.html'));
 });
 
