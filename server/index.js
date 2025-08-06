@@ -2,6 +2,7 @@ const express = require('express');
 const cors = require('cors');
 const portfolioData = require('./data/portfolioData');
 const { calculateGainLoss, calculatePercentage, calculatePortfolioMetrics } = require('./utils/calculations');
+const path = require('path');
 
 const app = express();
 const PORT = 3001;
