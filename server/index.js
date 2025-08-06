@@ -105,9 +105,9 @@ app.get('/health', (req, res) => {
 });
 
 
-app.get('/*', (_, res) => {
-  res.sendFile(path.join(__dirname, '..', 'dist', 'index.html'));
-});
+// app.get('/*', (_, res) => {
+//   res.sendFile(path.join(__dirname, '..', 'dist', 'index.html'));
+// });
 
 
 app.listen(PORT, '0.0.0.0', () => {
