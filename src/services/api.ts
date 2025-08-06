@@ -1,6 +1,8 @@
 import { Stock, PortfolioAllocation, PerformanceData, PortfolioSummary } from '../types/portfolio';
 
-const API_BASE = 'http://localhost:3001/api';
+// const API_BASE = 'http://localhost:3001/api';
+const API_BASE = 'https://portfolio-analysis-dashboard-er4g.onrender.com/api';
+
 
 export async function fetchHoldings(): Promise<Stock[]> {
   const response = await fetch(`${API_BASE}/portfolio/holdings`);
