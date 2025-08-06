@@ -108,10 +108,11 @@ cd server && node index.js
 
 # Start frontend (from root in separate terminal)
 npm run dev
-🤖 AI Tools Used
-Tool	Purpose
-ChatGPT-4	Clarified requirements, optimized logic
-GitHub Copilot	Tailwind suggestions, JSX generation assistance
+      🤖 AI Tools Used
+      Tool	Purpose
+      ChatGPT-4	Clarified requirements, optimized logic
+      GitHub Copilot	Tailwind suggestions, JSX generation assistance
+      Bolt AI to code generation
 
 All critical logic and business calculations were manually written.
 AI tools were used to accelerate development and assist with syntax—not replace implementation.
